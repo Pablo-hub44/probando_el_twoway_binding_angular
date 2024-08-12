@@ -1,0 +1,12 @@
+<div id="inputs">
+    <p>
+        <label>Width</label>
+        <input type="number" step="1.0" [(ngModel)]="rectSize.width" />
+    </p>
+    <p>
+        <label>Height</label>
+        <input type="number" step="1.0" [(ngModel)]="rectSize.height" />
+    </p>
+</div>
+<!-- y asi creamo un two way binding personalizado-->
+<app-rect [(size)]="rectSize" />
